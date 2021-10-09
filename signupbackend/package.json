@@ -1,0 +1,25 @@
+{
+  "name": "signupbackend",
+  "version": "1.0.0",
+  "description": "Sign up application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION = false npm install --prefix client && run build --prefix client"
+  },
+  "keywords": [
+    "Kishan",
+    "Kanojia"
+  ],
+  "author": "Kishan Kanojia",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "heroku": "^7.59.0",
+    "mongoose": "^6.0.9",
+    "nodemon": "^2.0.13"
+  }
+}
